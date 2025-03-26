@@ -103,6 +103,9 @@ def predict():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-PORT = int(os.environ.get("PORT", 10000))  # Use Render’s PORT variable
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=PORT)
+app.run()
+# PORT = int(os.environ.get("PORT", 10000))  # Use Render’s PORT variable
+# if __name__ == "__main__":
+#     app.run(host="0.0.0.0", port=PORT)
+# import os
+# os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU warnings
