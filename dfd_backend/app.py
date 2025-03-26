@@ -14,7 +14,7 @@ CORS(app)  # Allow frontend requests
 MODEL_DIR = "models" 
 MODEL_URL1 = "https://drive.google.com/uc?id=1RUdmCUbgGLrK2G5Hxusa7wMG_oszX-Bg"  # Replace with your actual file ID
 MODEL_PATH1 = os.path.join(MODEL_DIR, "hybrid_model_im.keras")
-
+os.makedirs("models", exist_ok=True)
 def download_model1():
     if not os.path.exists(MODEL_PATH1):
         gdown.download(MODEL_URL1, MODEL_PATH1, quiet=False)
@@ -104,7 +104,8 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    PORT = int(os.environ["PORT"])  # Use Render's dynamically assigned port
-    app.run(host="0.0.0.0", port=PORT)
+    # Use the port assigned by Render, defaulting to 8080 if not set
+    PORT = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=PORT, debug=True)
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU warnings
