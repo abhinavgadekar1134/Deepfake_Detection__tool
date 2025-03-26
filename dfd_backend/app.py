@@ -103,7 +103,9 @@ def predict():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-app.run()
+if __name__ == "__main__":
+    PORT = int(os.environ.get("PORT", 4000))  # Render assigns a port dynamically
+    app.run(host="0.0.0.0", port=PORT)
 # PORT = int(os.environ.get("PORT", 10000))  # Use Render’s PORT variable
 # if __name__ == "__main__":
 #     app.run(host="0.0.0.0", port=PORT)
