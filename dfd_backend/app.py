@@ -11,9 +11,9 @@ app = Flask(__name__)
 CORS(app)  # Allow frontend requests
 #load models from google drive
 # https://drive.google.com/file/d/1RUdmCUbgGLrK2G5Hxusa7wMG_oszX-Bg/view?usp=sharing
-
+MODEL_DIR = "models" 
 MODEL_URL1 = "https://drive.google.com/uc?id=1RUdmCUbgGLrK2G5Hxusa7wMG_oszX-Bg"  # Replace with your actual file ID
-MODEL_PATH1 = "/hybrid_model_im.keras"
+MODEL_PATH1 = os.path.join(MODEL_DIR, "hybrid_model_im.keras")
 
 def download_model1():
     if not os.path.exists(MODEL_PATH1):
@@ -22,7 +22,7 @@ def download_model1():
 
 hybrid_model_image = download_model1()
 MODEL_URL2 = "https://drive.google.com/uc?id=1rWr5SvYKMH-gLNpVwSgaNFelkjAVuiwQ"  # Replace with your actual file ID
-MODEL_PATH2 = "/deepfake_detection_model.keras"
+MODEL_PATH2 = os.path.join(MODEL_DIR, "deepfake_detection_model.keras")
 
 def download_model2():
     if not os.path.exists(MODEL_PATH2):
