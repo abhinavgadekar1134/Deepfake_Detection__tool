@@ -1,0 +1,11 @@
+this Creates env:     python -m venv venv
+install his packages:  pip install flask flask-cors tensorflow opencv-python numpy
+
+
+
+venv\Scripts\activate
+python app.py
+
+
+python --version
+pip --version

@@ -1,0 +1,24 @@
+.filesss{
+    /* background-color: red; */
+    box-shadow: 8px 8px 15px 1px rgb(204, 209, 209);
+    /* border: 4px solid red; */
+}
+.border-red-500{
+    box-shadow: 4px 4px 10px 1px rgb(247, 121, 121);
+}
+
+.border-green-500{
+    box-shadow: 4px 4px 10px 1px rgb(124, 255, 172);
+}
+
+.hrr{
+    /* margin-top: 5px; */
+    height:5px;
+    width:20%;
+    color: red;
+    background-color: rgb(58, 75, 186);
+  
+}
+.performance{
+    margin-top: 0px !important;
+}

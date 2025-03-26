@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+venv
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/.venv
+venv
+/uploads
+# testing
+/coverage
+deepfake_detection_model.keras
+hybrid_model_im.keras
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
