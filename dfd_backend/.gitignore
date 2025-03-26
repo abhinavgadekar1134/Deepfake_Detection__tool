@@ -13,7 +13,6 @@ deepfake_detection_model.keras
 hybrid_model_im.keras
 # production
 /build
-models
 # misc
 .DS_Store
 .env.local
