@@ -35,7 +35,7 @@ const Home = () => {
     formData.append("file", mediaFile); // Use stored file object
 
     try {
-      const response = await fetch({API_URL}+"predict", {
+      const response = await fetch(`${API_URL}predict`, {
         method: "POST",
         body: formData,
       });
