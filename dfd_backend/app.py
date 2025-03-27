@@ -1,9 +1,7 @@
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU
-
 import tensorflow as tf
-tf.config.set_visible_devices([], 'GPU')  # Another way to disable GPU
+
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
