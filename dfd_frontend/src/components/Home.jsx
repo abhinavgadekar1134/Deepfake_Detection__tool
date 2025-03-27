@@ -8,7 +8,7 @@ const Home = () => {
   const [isFake, setIsFake] = useState(null); // Store prediction result (fake or real)
   const [isLoading, setIsLoading] = useState(false); // Loader state
   const API_URL = process.env.REACT_APP_API_URL;
-  window.alert(API_URL);
+  // window.alert(API_URL);
   // Function to handle media upload
   const handleUpload = (event) => {
     const file = event.target.files[0];
