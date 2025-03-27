@@ -104,6 +104,8 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get('PORT'))  # Use the PORT environment variable
+    print(port)
+    app.run(host='0.0.0.0', port=port) 
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU warnings
