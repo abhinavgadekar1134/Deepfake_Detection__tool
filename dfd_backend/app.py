@@ -109,4 +109,4 @@ def predict():
 
 if __name__ == "__main__":
     port = os.environ.get("PORT")
-    app.run(port=port)
+    app.run(port=port,debug=True)

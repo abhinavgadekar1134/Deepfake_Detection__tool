@@ -7,7 +7,7 @@ const Home = () => {
   const [mediaType, setMediaType] = useState(null); // Track media type (image or video)
   const [isFake, setIsFake] = useState(null); // Store prediction result (fake or real)
   const [isLoading, setIsLoading] = useState(false); // Loader state
-
+  const API_URL = process.env.REACT_APP_API_URL;
   // Function to handle media upload
   const handleUpload = (event) => {
     const file = event.target.files[0];
@@ -34,7 +34,7 @@ const Home = () => {
     formData.append("file", mediaFile); // Use stored file object
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch({API_URL}+"predict", {
         method: "POST",
         body: formData,
       });
