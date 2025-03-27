@@ -21,7 +21,7 @@ def download_model1():
         gdown.download(MODEL_URL1, MODEL_PATH1, quiet=False)
     return tf.keras.models.load_model(MODEL_PATH1)
 
-hybrid_model_image = download_model1()
+# hybrid_model_image = download_model1()
 MODEL_URL2 = "https://drive.google.com/uc?id=1rWr5SvYKMH-gLNpVwSgaNFelkjAVuiwQ"  # Replace with your actual file ID
 MODEL_PATH2 = os.path.join(MODEL_DIR, "deepfake_detection_model.keras")
 
@@ -30,13 +30,14 @@ def download_model2():
         gdown.download(MODEL_URL2, MODEL_PATH2, quiet=False)
     return tf.keras.models.load_model(MODEL_PATH2)
 
-hybrid_model_video = download_model2()
+# hybrid_model_video = download_model2()
 print(MODEL_PATH2)
 
 # Load trained models
 # hybrid_model_video = tf.keras.models.load_model("deepfake_detection_model.keras")
 # hybrid_model_image = tf.keras.models.load_model("hybrid_model_im.keras")
-
+hybrid_model_video = ""
+hybrid_model_image=""
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -108,4 +109,4 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # Correct syntax
  # Use the PORT environment variable
     print(port)
-    app.run(host='0.0.0.0', port=port) 
+    print(f"Port detected: {port}")
