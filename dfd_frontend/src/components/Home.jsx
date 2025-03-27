@@ -8,7 +8,7 @@ const Home = () => {
   const [isFake, setIsFake] = useState(null); // Store prediction result (fake or real)
   const [isLoading, setIsLoading] = useState(false); // Loader state
   const API_URL = process.env.REACT_APP_API_URL;
-  // window.alert(API_URL);
+
   // Function to handle media upload
   const handleUpload = (event) => {
     const file = event.target.files[0];
@@ -66,16 +66,15 @@ const Home = () => {
       </p>
 
       {/* Main Content Box */}
-      <div className="w-full max-w-4xl rounded-lg p-6 flex bg-white shadow-lg border border-gray-200">
+      <div className="w-full max-w-4xl rounded-lg p-6 flex flex-col lg:flex-row bg-white shadow-lg border border-gray-200">
         {/* Left Side - Preview Media */}
-        <div className="w-1/2 flex items-center justify-center p-4">
+        <div className="w-full lg:w-1/2 flex items-center justify-center p-4 mb-4 lg:mb-0">
           {media ? (
             mediaType === "image" ? (
               <img
                 src={media}
                 alt="Preview"
-                className={`w-full h-auto max-h-80 object-contain rounded-lg border-2 filesss ${isFake === true ? "border-red-500" : isFake === false ? "border-green-500" : "border-gray-300"
-                  }`}
+                className={`w-full h-auto max-h-80 object-contain rounded-lg border-2 filesss ${isFake === true ? "border-red-500" : isFake === false ? "border-green-500" : "border-gray-300"}`}
               />
             ) : (
               <video
@@ -83,8 +82,7 @@ const Home = () => {
                 controls
                 autoPlay
                 playsInline
-                className={`w-full h-auto max-h-80 rounded-lg border-2 filesss ${isFake === true ? "border-red-500" : isFake === false ? "border-green-500" : "border-gray-300"
-                  }`}
+                className={`w-full h-auto max-h-80 rounded-lg border-2 filesss ${isFake === true ? "border-red-500" : isFake === false ? "border-green-500" : "border-gray-300"}`}
               />
             )
           ) : (
@@ -95,7 +93,7 @@ const Home = () => {
         </div>
 
         {/* Right Side - Upload & Predict */}
-        <div className="w-1/2 flex flex-col justify-center items-center space-y-4 p-4">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center space-y-4 p-4">
           <input
             type="file"
             accept="image/*, video/*"
