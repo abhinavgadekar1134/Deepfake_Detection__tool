@@ -105,6 +105,7 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT'),10000)  # Use the PORT environment variable
+    port = int(os.environ.get("PORT", 10000))  # Correct syntax
+ # Use the PORT environment variable
     print(port)
     app.run(host='0.0.0.0', port=port) 
