@@ -9,47 +9,19 @@
   and deployed with a clean frontend and Hugging Face backend.
 </p>
 <!-- Screenshots: Single Row -->
-<div style="
-  display:flex;
-  flex-direction:row;
-  gap:16px;
-  justify-content:center;
-  align-items:center;
-  margin:24px 0;
-  overflow-x:auto;
-">
-
-  <img 
-    src="screenshots/deepfake1.png"
-    alt="Deepfake Screenshot 1"
-    style="
-      width:240px;
-      border-radius:10px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.35);
-    "
-  />
-
-  <img 
-    src="screenshots/deepfake2.png"
-    alt="Deepfake Screenshot 2"
-    style="
-      width:240px;
-      border-radius:10px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.35);
-    "
-  />
-
-  <img 
-    src="screenshots/deepfake3.png"
-    alt="Deepfake Screenshot 3"
-    style="
-      width:240px;
-      border-radius:10px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.35);
-    "
-  />
-
-</div>
+<table align="center">
+  <tr>
+    <td>
+      <img src="screenshots/deepfake1.png" width="220"/>
+    </td>
+    <td>
+      <img src="screenshots/deepfake2.png" width="220"/>
+    </td>
+    <td>
+      <img src="screenshots/deepfake3.png" width="220"/>
+    </td>
+  </tr>
+</table>
 <p style="font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;">
   <strong>Demo:</strong> 
   <a href="https://deepfake-detection-tool.netlify.app/" target="_blank" style="color:#58a6ff;text-decoration:none;">
