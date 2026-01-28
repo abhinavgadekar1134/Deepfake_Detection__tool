@@ -1,6 +1,6 @@
+For Backend:
 this Creates env:     python -m venv venv
-install his packages:  pip install flask flask-cors tensorflow opencv-python numpy
-
+install his packages:  pip install flask flask-cors tensorflow opencv-python numpy gdown pillow gunicorn
 
 
 venv\Scripts\activate
@@ -9,3 +9,9 @@ python app.py
 
 python --version
 pip --version
+
+
+
+For Frontend: 
+npm i 
+npm start

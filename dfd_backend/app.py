@@ -2,7 +2,6 @@
 import os
 import tensorflow as tf
 
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import cv2
@@ -97,7 +96,8 @@ def predict():
             return jsonify({"error": "Unsupported file type"}), 400
 
         confidence = pred_value
-        print(pred_class)
+        print("Prediction Class",pred_class)
+        
         return jsonify({
             "prediction": pred_class,
             "confidence": f"{confidence * 100:.2f}%",
