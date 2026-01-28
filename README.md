@@ -8,7 +8,17 @@
   Built using <span style="color:#58a6ff;font-weight:bold;">Python, TensorFlow, and Keras</span>,
   and deployed with a clean frontend and Hugging Face backend.
 </p>
-
+<img 
+  src="https://drive.google.com/file/d/1fPNaQxJ1fvH_Z-hEwI8_Qa-Rls5CfOC-/view?usp=sharing" 
+  alt="Deepfake Detection Tool Screenshot"
+  style="
+    width:100%;
+    max-width:900px;
+    border-radius:12px;
+    margin:20px 0;
+    box-shadow:0 8px 24px rgba(0,0,0,0.4);
+  "
+/>
 <p style="font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;">
   <strong>Demo:</strong> 
   <a href="https://deepfake-detection-tool.netlify.app/" target="_blank" style="color:#58a6ff;text-decoration:none;">
