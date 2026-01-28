@@ -9,7 +9,7 @@
   and deployed with a clean frontend and Hugging Face backend.
 </p>
 <img 
-  src="https://drive.google.com/file/d/1fPNaQxJ1fvH_Z-hEwI8_Qa-Rls5CfOC-/view?usp=sharing" 
+  src="https://drive.google.com/u/0/drive-viewer/AKGpihZYPPrRIRJ4zQLCYr8NWQTeTQPdqGa6f1_Qm5CPfCmEjOr4Oj1UVWHhW4Dy8lcu6F_GzAkQOGimBsdv_Wq1RB2e2NBSGscOiu0=s1600-rw-v1?auditContext=forDisplay" 
   alt="Deepfake Detection Tool Screenshot"
   style="
     width:100%;
